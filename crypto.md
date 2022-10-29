@@ -36,7 +36,7 @@ $$
 				a_{n,1} & \cdots & a_{n, m}
 		\end{bmatrix} \\
 		\begin{bmatrix}
-		    b_1 & \cdots & b_n \\
+		    b_1 & \cdots & b_m \\
 		\end{bmatrix} &=&
 		\begin{bmatrix}
 		    x_1 & \cdots & x_n \\
@@ -52,7 +52,7 @@ $$
     x_1 & \cdots & x_n \\
 \end{bmatrix} =
 \begin{bmatrix}
-    b_1 & \cdots & b_n \\
+    b_1 & \cdots & b_m \\
 \end{bmatrix}
 params^{-1}
 $$
@@ -70,7 +70,7 @@ $$
 				a_{n,1} & \cdots & a_{n, m}
 		\end{bmatrix} \\
 		\begin{bmatrix}
-		    y_1 & \cdots & y_n \\
+		    y_1 & \cdots & y_m \\
 		\end{bmatrix} &=&
 		\begin{bmatrix}
 		    x_1 & \cdots & x_n \\
@@ -84,7 +84,7 @@ $$
 $$
 \begin{array}{l}
 		\begin{bmatrix}
-		    x_1 & \cdots & x_n & y_1 & \cdots & y_n \\
+		    x_1 & \cdots & x_n & y_1 & \cdots & y_m \\
 		\end{bmatrix} &=&
 		\begin{bmatrix}
 		    x_1 & \cdots & x_n \\
@@ -95,7 +95,7 @@ $$
 		    0 & \cdots & 1 & \\
 		\end{bmatrix} \\
 		\begin{bmatrix}
-		    x_1 & \cdots & x_n & y_1 & \cdots & y_n\\
+		    x_1 & \cdots & x_n & y_1 & \cdots & y_m\\
 		    \\
 		    \\
 		\end{bmatrix} &=&
