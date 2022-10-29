@@ -21,12 +21,12 @@ $$
 \end{array}
 $$
 
-## Matrix Inverse
+## Inverse
 
 ### problem
 
 $$
-\begin{eqnarray*}
+\begin{array}{l}
 
 params &=&
 \begin{bmatrix}
@@ -43,7 +43,19 @@ a_{n,1} & \cdots & a_{n, m}
 \end{bmatrix}
 params \\
 
-\end{eqnarray*}
+\end{array}
+$$
+
+### solve
+
+$$
+\begin{bmatrix}
+    x_1 & \cdots & x_n \\
+\end{bmatrix} =
+\begin{bmatrix}
+    y_1 & \cdots & y_n \\
+\end{bmatrix}
+params^{-1}
 $$
 
 ## LLL
@@ -51,7 +63,7 @@ $$
 ### problem
 
 $$
-\begin{eqnarray*}
+\begin{array}{l}
 
 params &=&
 \begin{bmatrix}
@@ -68,13 +80,13 @@ a_{n,1} & \cdots & a_{n, m}
 \end{bmatrix}
 params \\
 
-\end{eqnarray*}
+\end{array}
 $$
 
 ### solve
 
 $$
-\begin{eqnarray*}
+\begin{array}{l}
 
 \begin{bmatrix}
     x_1 & \cdots & x_n & y_1 & \cdots & y_n \\
@@ -101,7 +113,7 @@ LLL\left(
 \end{bmatrix}
 \right)
 
-\end{eqnarray*}
+\end{array}
 $$
 
 ## Newton's method
