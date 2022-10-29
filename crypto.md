@@ -13,7 +13,7 @@ $$
 ### problem
 
 $$
-\left\{
+\left\\{
 		\begin{array}{l}
 		    y = a_1 \pmod {M_1} \\
 		    y = a_2 \pmod {M_2} \\
