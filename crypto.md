@@ -13,12 +13,14 @@ $$
 ### problem
 
 $$
-\begin{array}{l}
-    y = a_1 \pmod {M_1} \\
-    y = a_2 \pmod {M_2} \\
-    \vdots \\
-    y = a_i \pmod {M_i} \\
-\end{array}
+\left\{
+		\begin{array}{l}
+		    y = a_1 \pmod {M_1} \\
+		    y = a_2 \pmod {M_2} \\
+		    \vdots \\
+		    y = a_i \pmod {M_i} \\
+		\end{array}
+\right.
 $$
 
 ## Inverse
@@ -29,9 +31,9 @@ $$
 \begin{array}{l}
 		params &=&
 		\begin{bmatrix}
-		a_{1,1} & \cdots & a_{1,m} \\
-		\vdots & \ddots & \vdots \\
-		a_{n,1} & \cdots & a_{n, m}
+				a_{1,1} & \cdots & a_{1,m} \\
+				\vdots & \ddots & \vdots \\
+				a_{n,1} & \cdots & a_{n, m}
 		\end{bmatrix} \\
 		\begin{bmatrix}
 		    b_1 & \cdots & b_n \\
@@ -63,9 +65,9 @@ $$
 \begin{array}{l}
 		params &=&
 		\begin{bmatrix}
-		a_{1,1} & \cdots & a_{1,m} \\
-		\vdots & \ddots & \vdots \\
-		a_{n,1} & \cdots & a_{n, m}
+				a_{1,1} & \cdots & a_{1,m} \\
+				\vdots & \ddots & \vdots \\
+				a_{n,1} & \cdots & a_{n, m}
 		\end{bmatrix} \\
 		\begin{bmatrix}
 		    y_1 & \cdots & y_n \\
