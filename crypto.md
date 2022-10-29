@@ -14,10 +14,10 @@ $$
 
 $$
 \begin{array}{l}
-    y \equiv x_1 \pmod {M_1} \\
-    y \equiv x_2 \pmod {M_2} \\
+    y = x_1 \pmod {M_1} \\
+    y = x_2 \pmod {M_2} \\
     \vdots \\
-    y \equiv x_i \pmod {M_i} \\
+    y = x_i \pmod {M_i} \\
 \end{array}
 $$
 
@@ -27,22 +27,19 @@ $$
 
 $$
 \begin{array}{l}
-
-params &=&
-\begin{bmatrix}
-a_{1,1} & \cdots & a_{1,m} \\
-\vdots & \ddots & \vdots \\
-a_{n,1} & \cdots & a_{n, m}
-\end{bmatrix} \\
-
-\begin{bmatrix}
-    y_1 & \cdots & y_n \\
-\end{bmatrix} &=&
-\begin{bmatrix}
-    x_1 & \cdots & x_n \\
-\end{bmatrix}
-params \\
-
+		params &=&
+		\begin{bmatrix}
+		a_{1,1} & \cdots & a_{1,m} \\
+		\vdots & \ddots & \vdots \\
+		a_{n,1} & \cdots & a_{n, m}
+		\end{bmatrix} \\
+		\begin{bmatrix}
+		    y_1 & \cdots & y_n \\
+		\end{bmatrix} &=&
+		\begin{bmatrix}
+		    x_1 & \cdots & x_n \\
+		\end{bmatrix}
+		params \\
 \end{array}
 $$
 
@@ -64,22 +61,19 @@ $$
 
 $$
 \begin{array}{l}
-
-params &=&
-\begin{bmatrix}
-a_{1,1} & \cdots & a_{1,m} \\
-\vdots & \ddots & \vdots \\
-a_{n,1} & \cdots & a_{n, m}
-\end{bmatrix} \\
-
-\begin{bmatrix}
-    y_1 & \cdots & y_n \\
-\end{bmatrix} &=&
-\begin{bmatrix}
-    x_1 & \cdots & x_n \\
-\end{bmatrix}
-params \\
-
+		params &=&
+		\begin{bmatrix}
+		a_{1,1} & \cdots & a_{1,m} \\
+		\vdots & \ddots & \vdots \\
+		a_{n,1} & \cdots & a_{n, m}
+		\end{bmatrix} \\
+		\begin{bmatrix}
+		    y_1 & \cdots & y_n \\
+		\end{bmatrix} &=&
+		\begin{bmatrix}
+		    x_1 & \cdots & x_n \\
+		\end{bmatrix}
+		params \\
 \end{array}
 $$
 
@@ -87,32 +81,29 @@ $$
 
 $$
 \begin{array}{l}
-
-\begin{bmatrix}
-    x_1 & \cdots & x_n & y_1 & \cdots & y_n \\
-\end{bmatrix} &=&
-\begin{bmatrix}
-    x_1 & \cdots & x_n \\
-\end{bmatrix}
-\begin{bmatrix}
-    1 & \cdots & 0 & \\
-    \vdots & \ddots & \vdots & params \\
-    0 & \cdots & 1 & \\
-\end{bmatrix} \\
-
-\begin{bmatrix}
-    x_1 & \cdots & x_n & y_1 & \cdots & y_n\\
-    \\
-    \\
-\end{bmatrix} &=&
-LLL\left(
-\begin{bmatrix}
-    1 & \cdots & 0 & \\
-    \vdots & \ddots & \vdots & params \\
-    0 & \cdots & 1 & \\
-\end{bmatrix}
-\right)
-
+		\begin{bmatrix}
+		    x_1 & \cdots & x_n & y_1 & \cdots & y_n \\
+		\end{bmatrix} &=&
+		\begin{bmatrix}
+		    x_1 & \cdots & x_n \\
+		\end{bmatrix}
+		\begin{bmatrix}
+		    1 & \cdots & 0 & \\
+		    \vdots & \ddots & \vdots & params \\
+		    0 & \cdots & 1 & \\
+		\end{bmatrix} \\
+		\begin{bmatrix}
+		    x_1 & \cdots & x_n & y_1 & \cdots & y_n\\
+		    \\
+		    \\
+		\end{bmatrix} &=&
+		LLL\left(
+		\begin{bmatrix}
+		    1 & \cdots & 0 & \\
+		    \vdots & \ddots & \vdots & params \\
+		    0 & \cdots & 1 & \\
+		\end{bmatrix}
+		\right)
 \end{array}
 $$
 
