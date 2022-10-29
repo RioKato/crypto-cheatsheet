@@ -5,7 +5,7 @@
 ### problem
 
 $$
-\gcd(a,b) = ax+by
+\gcd(a,b) = ax + by
 $$
 
 ## Chinese remainder theorem
@@ -14,10 +14,10 @@ $$
 
 $$
 \begin{array}{l}
-    y = x_1 \pmod {M_1} \\
-    y = x_2 \pmod {M_2} \\
+    y = a_1 \pmod {M_1} \\
+    y = a_2 \pmod {M_2} \\
     \vdots \\
-    y = x_i \pmod {M_i} \\
+    y = a_i \pmod {M_i} \\
 \end{array}
 $$
 
@@ -34,7 +34,7 @@ $$
 		a_{n,1} & \cdots & a_{n, m}
 		\end{bmatrix} \\
 		\begin{bmatrix}
-		    y_1 & \cdots & y_n \\
+		    b_1 & \cdots & b_n \\
 		\end{bmatrix} &=&
 		\begin{bmatrix}
 		    x_1 & \cdots & x_n \\
@@ -50,7 +50,7 @@ $$
     x_1 & \cdots & x_n \\
 \end{bmatrix} =
 \begin{bmatrix}
-    y_1 & \cdots & y_n \\
+    b_1 & \cdots & b_n \\
 \end{bmatrix}
 params^{-1}
 $$
