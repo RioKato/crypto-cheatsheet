@@ -13,14 +13,12 @@ $$
 ### problem
 
 $$
-\left\{ \,
-    \begin{array}{l}
-        y \equiv x_1 \pmod {M_1} \\
-        y \equiv x_2 \pmod {M_2} \\
-        \vdots \\
-        y \equiv x_i \pmod {M_i} \\
-    \end{array}
-\right.
+\begin{array}{l}
+    y \equiv x_1 \pmod {M_1} \\
+    y \equiv x_2 \pmod {M_2} \\
+    \vdots \\
+    y \equiv x_i \pmod {M_i} \\
+\end{array}
 $$
 
 ## Matrix Inverse
@@ -28,9 +26,9 @@ $$
 ### problem
 
 $$
-\begin{align*}
+\begin{eqnarray*}
 
-params &=
+params &=&
 \begin{bmatrix}
 a_{1,1} & \cdots & a_{1,m} \\
 \vdots & \ddots & \vdots \\
@@ -39,13 +37,13 @@ a_{n,1} & \cdots & a_{n, m}
 
 \begin{bmatrix}
     y_1 & \cdots & y_n \\
-\end{bmatrix} &=
+\end{bmatrix} &=&
 \begin{bmatrix}
     x_1 & \cdots & x_n \\
 \end{bmatrix}
 params \\
 
-\end{align*}
+\end{eqnarray*}
 $$
 
 ## LLL
@@ -53,9 +51,9 @@ $$
 ### problem
 
 $$
-\begin{align*}
+\begin{eqnarray*}
 
-params &=
+params &=&
 \begin{bmatrix}
 a_{1,1} & \cdots & a_{1,m} \\
 \vdots & \ddots & \vdots \\
@@ -64,23 +62,23 @@ a_{n,1} & \cdots & a_{n, m}
 
 \begin{bmatrix}
     y_1 & \cdots & y_n \\
-\end{bmatrix} &=
+\end{bmatrix} &=&
 \begin{bmatrix}
     x_1 & \cdots & x_n \\
 \end{bmatrix}
 params \\
 
-\end{align*}
+\end{eqnarray*}
 $$
 
 ### solve
 
 $$
-\begin{align*}
+\begin{eqnarray*}
 
 \begin{bmatrix}
     x_1 & \cdots & x_n & y_1 & \cdots & y_n \\
-\end{bmatrix} &=
+\end{bmatrix} &=&
 \begin{bmatrix}
     x_1 & \cdots & x_n \\
 \end{bmatrix}
@@ -94,7 +92,7 @@ $$
     x_1 & \cdots & x_n & y_1 & \cdots & y_n\\
     \\
     \\
-\end{bmatrix} &=
+\end{bmatrix} &=&
 LLL\left(
 \begin{bmatrix}
     1 & \cdots & 0 & \\
@@ -103,7 +101,7 @@ LLL\left(
 \end{bmatrix}
 \right)
 
-\end{align*}
+\end{eqnarray*}
 $$
 
 ## Newton's method
