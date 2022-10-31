@@ -124,7 +124,7 @@ $$
       \vdots \\
       y_m = a_{1,m} x_1 + a_{2,m} x_2 + \cdots + a_{n,m} x_n + N k_m \\
     \end{array}
-  \right.
+  \right. \\
   params &=&
   \begin{bmatrix}
     a_{1,1} & \cdots & a_{1,m} \\
@@ -132,7 +132,7 @@ $$
     a_{n,1} & \cdots & a_{n,m} \\
     N & \cdots & 0 \\
     \vdots & \ddots & \vdots \\
-    0 & \vdots & N \\
+    0 & \cdots & N \\
   \end{bmatrix} \\
   \begin{bmatrix}
     y_1 & \cdots & y_m \\
