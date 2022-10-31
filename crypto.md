@@ -238,6 +238,23 @@ $$
 ## Chinese remainder theorem
 
 ### problem
+$$
+\left\\{
+  \begin{array}{l}
+    b_0 = x \pmod {p_0} \\
+    \vdots \\
+    b_n = x \pmod {p_n} \\
+  \end{array}
+\right.
+$$
+
+### answer
+
+$$
+x = crt(b_0, \cdots, b_n, p_0, \cdots, p_n)
+$$
+
+### problem
 
 $$
 \left\\{
@@ -253,22 +270,22 @@ $$
 
 $$
 \begin{array}{l}
-  P_i &=& (n / p_i) P \\
-  p_i P_i &=& G \\
+  P_i = (n / p_i) P \\
+  p_i P_i = G \\
   \left\\{
     \begin{array}{l}
-      y_0 P_0 = Q \\
+      b_0 P_0 = Q \\
       \vdots \\
-      y_n P_n = Q \\
+      b_n P_n = Q \\
     \end{array}
   \right. \\
   \left\\{
     \begin{array}{l}
-      y_0 = x \pmod p_0 \\
+      b_0 = x \pmod {p_0} \\
       \vdots \\
-      y_n = x \pmod p_n \\
+      b_n = x \pmod {p_n} \\
     \end{array}
   \right. \\
-  x = crt(y_0, \cdots, y_n, p_1, \cdots, p_n)
+  x = crt(b_0, \cdots, b_n, p_0, \cdots, p_n)
 \end{array}
 $$
