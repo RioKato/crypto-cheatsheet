@@ -1,60 +1,45 @@
 # Crypto Cheat Sheet
 
-## Extended Euclidean algorithm
-
-### problem
-
-$$
-\gcd(a,b) = ax + by
-$$
-
-## Chinese remainder theorem
-
-### problem
-
-$$
-\left\\{
-		\begin{array}{l}
-		    y = a_1 \pmod {M_1} \\
-		    y = a_2 \pmod {M_2} \\
-		    \vdots \\
-		    y = a_i \pmod {M_i} \\
-		\end{array}
-\right.
-$$
-
 ## Inverse
 
 ### problem
 
 $$
-\begin{array}{l}
-		params &=&
-		\begin{bmatrix}
-				a_{1,1} & \cdots & a_{1,m} \\
-				\vdots & \ddots & \vdots \\
-				a_{n,1} & \cdots & a_{n, m}
-		\end{bmatrix} \\
-		\begin{bmatrix}
-		    b_1 & \cdots & b_m \\
-		\end{bmatrix} &=&
-		\begin{bmatrix}
-		    x_1 & \cdots & x_n \\
-		\end{bmatrix}
-		params \\
-\end{array}
+\left\\{
+  \begin{array}{l}
+    b_1 = a_{1,1} x_1 + a_{2,1} x_2 + \cdots + a_{n,1} x_n \\
+    b_2 = a_{1,2} x_1 + a_{2,2} x_2 + \cdots + a_{n,2} x_n \\
+    \vdots \\
+    b_m = a_{1,m} x_1 + a_{2,m} x_2 + \cdots + a_{n,m} x_n \\
+  \end{array}
+\right.
 $$
 
 ### solve
 
 $$
-\begin{bmatrix}
-    x_1 & \cdots & x_n \\
-\end{bmatrix} =
-\begin{bmatrix}
+\begin{array}{l}
+  params &=&
+    \begin{bmatrix}
+      a_{1,1} & \cdots & a_{1,m} \\
+      \vdots & \ddots & \vdots \\
+      a_{n,1} & \cdots & a_{n,m}
+  \end{bmatrix} \\
+  \begin{bmatrix}
     b_1 & \cdots & b_m \\
-\end{bmatrix}
-params^{-1}
+  \end{bmatrix} &=&
+  \begin{bmatrix}
+    x_1 & \cdots & x_n \\
+  \end{bmatrix}
+  params \\
+  \begin{bmatrix}
+    x_1 & \cdots & x_n \\
+  \end{bmatrix} &=&
+  \begin{bmatrix}
+    b_1 & \cdots & b_m \\
+  \end{bmatrix}
+  params^{-1}
+\end{array}
 $$
 
 ## LLL
@@ -62,50 +47,56 @@ $$
 ### problem
 
 $$
-\begin{array}{l}
-		params &=&
-		\begin{bmatrix}
-				a_{1,1} & \cdots & a_{1,m} \\
-				\vdots & \ddots & \vdots \\
-				a_{n,1} & \cdots & a_{n, m}
-		\end{bmatrix} \\
-		\begin{bmatrix}
-		    y_1 & \cdots & y_m \\
-		\end{bmatrix} &=&
-		\begin{bmatrix}
-		    x_1 & \cdots & x_n \\
-		\end{bmatrix}
-		params \\
-\end{array}
+\left\\{
+  \begin{array}{l}
+    y_1 = a_{1,1} x_1 + a_{2,1} x_2 + \cdots + a_{n,1} x_n \\
+    y_2 = a_{1,2} x_1 + a_{2,2} x_2 + \cdots + a_{n,2} x_n \\
+    \vdots \\
+    y_m = a_{1,m} x_1 + a_{2,m} x_2 + \cdots + a_{n,m} x_n \\
+  \end{array}
+\right.
 $$
 
 ### solve
 
 $$
 \begin{array}{l}
-		\begin{bmatrix}
-		    x_1 & \cdots & x_n & y_1 & \cdots & y_m \\
-		\end{bmatrix} &=&
-		\begin{bmatrix}
-		    x_1 & \cdots & x_n \\
-		\end{bmatrix}
-		\begin{bmatrix}
-		    1 & \cdots & 0 & \\
-		    \vdots & \ddots & \vdots & params \\
-		    0 & \cdots & 1 & \\
-		\end{bmatrix} \\
-		\begin{bmatrix}
-		    x_1 & \cdots & x_n & y_1 & \cdots & y_m\\
-		    \\
-		    \\
-		\end{bmatrix} &=&
-		LLL\left(
-		\begin{bmatrix}
-		    1 & \cdots & 0 & \\
-		    \vdots & \ddots & \vdots & params \\
-		    0 & \cdots & 1 & \\
-		\end{bmatrix}
-		\right)
+  params &=&
+  \begin{bmatrix}
+    a_{1,1} & \cdots & a_{1,m} \\
+    \vdots & \ddots & \vdots \\
+    a_{n,1} & \cdots & a_{n,m}
+  \end{bmatrix} \\
+  \begin{bmatrix}
+    y_1 & \cdots & y_m \\
+  \end{bmatrix} &=&
+  \begin{bmatrix}
+    x_1 & \cdots & x_n \\
+  \end{bmatrix}
+  params \\
+  \begin{bmatrix}
+    x_1 & \cdots & x_n & y_1 & \cdots & y_m \\
+  \end{bmatrix} &=&
+  \begin{bmatrix}
+    x_1 & \cdots & x_n \\
+  \end{bmatrix}
+  \begin{bmatrix}
+    1 & \cdots & 0 & \\
+    \vdots & \ddots & \vdots & params \\
+    0 & \cdots & 1 & \\
+  \end{bmatrix} \\
+  \begin{bmatrix}
+    x_1 & \cdots & x_n & y_1 & \cdots & y_m\\
+    \\
+    \\
+  \end{bmatrix} &=&
+  LLL\left(
+    \begin{bmatrix}
+      1 & \cdots & 0 & \\
+      \vdots & \ddots & \vdots & params \\
+      0 & \cdots & 1 & \\
+    \end{bmatrix}
+  \right)
 \end{array}
 $$
 
