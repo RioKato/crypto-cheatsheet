@@ -195,9 +195,11 @@ $$
 
 $$
 \left\\{
-  c_1 = f_1(m_1) \\
-  c_2 = f_2(m_2) \\
-  m_2 = f_3(m_1) \\
+  \begin{array}{l}
+    c_1 = f_1(m_1) \\
+    c_2 = f_2(m_2) \\
+    m_2 = f_3(m_1) \\
+  \end{array}
 \right.
 $$
 
@@ -207,9 +209,11 @@ $$
 \begin{array}{l}
   c_2 &=& f_1(f_3(m_1)) \\
   \left\\{
-    g_1(x) = x - m_1 \\
-    g_2(x) = c_2 - f_2(x) = g_1(x) h_1(x) \\
-    g_3(x) = c_2 - f_1(f_3(x)) = g_1(x) h_2(x) \\
+    \begin{array}{l}
+      g_1(x) = x - m_1 \\
+      g_2(x) = c_2 - f_2(x) = g_1(x) h_1(x) \\
+      g_3(x) = c_2 - f_1(f_3(x)) = g_1(x) h_2(x) \\
+    \end{array}
   \right.
   g_1 &=& gcd(g_2, g_3)
 \end{array}
