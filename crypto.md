@@ -19,7 +19,7 @@ $$
 
 $$
 \begin{array}{l}
-  params &=&
+  A &=&
     \begin{bmatrix}
       a_{1,1} & \cdots & a_{1,m} \\
       \vdots & \ddots & \vdots \\
@@ -31,14 +31,14 @@ $$
   \begin{bmatrix}
     x_1 & \cdots & x_n \\
   \end{bmatrix}
-  params \\
+  A \\
   \begin{bmatrix}
     x_1 & \cdots & x_n \\
   \end{bmatrix} &=&
   \begin{bmatrix}
     b_1 & \cdots & b_m \\
   \end{bmatrix}
-  params^{-1}
+  A^{-1}
 \end{array}
 $$
 
@@ -61,7 +61,7 @@ $$
 
 $$
 \begin{array}{l}
-  params &=&
+  A &=&
   \begin{bmatrix}
     a_{1,1} & \cdots & a_{1,m} \\
     \vdots & \ddots & \vdots \\
@@ -73,7 +73,7 @@ $$
   \begin{bmatrix}
     x_1 & \cdots & x_n \\
   \end{bmatrix}
-  params \\
+  A \\
   \begin{bmatrix}
     x_1 & \cdots & x_n & y_1 & \cdots & y_m \\
   \end{bmatrix} &=&
@@ -82,7 +82,7 @@ $$
   \end{bmatrix}
   \begin{bmatrix}
     1 & \cdots & 0 & \\
-    \vdots & \ddots & \vdots & params \\
+    \vdots & \ddots & \vdots & A \\
     0 & \cdots & 1 & \\
   \end{bmatrix} \\
   \begin{bmatrix}
@@ -93,7 +93,7 @@ $$
   LLL\left(
     \begin{bmatrix}
       1 & \cdots & 0 & \\
-      \vdots & \ddots & \vdots & params \\
+      \vdots & \ddots & \vdots & A \\
       0 & \cdots & 1 & \\
     \end{bmatrix}
   \right)
@@ -125,7 +125,7 @@ $$
       y_m = a_{1,m} x_1 + a_{2,m} x_2 + \cdots + a_{n,m} x_n + N k_m \\
     \end{array}
   \right. \\
-  params &=&
+  A &=&
   \begin{bmatrix}
     a_{1,1} & \cdots & a_{1,m} \\
     \vdots & \ddots & \vdots \\
@@ -140,7 +140,7 @@ $$
   \begin{bmatrix}
     x_1 & \cdots & x_n & k_1 & \cdots & k_m \\
   \end{bmatrix}
-  params \\
+  A \\
   \begin{bmatrix}
     x_1 & \cdots & x_n & y_1 & \cdots & y_m \\
   \end{bmatrix} &=&
@@ -150,7 +150,7 @@ $$
   \begin{bmatrix}
     1 & \cdots & 0 & \\
     \vdots & \ddots & \vdots & \\
-    0 & \cdots & 1 & params \\
+    0 & \cdots & 1 & A \\
     0 & \cdots & 0 & \\
     \vdots & \ddots & \vdots & \\
     0 & \cdots & 0 & \\
@@ -164,7 +164,7 @@ $$
     \begin{bmatrix}
       1 & \cdots & 0 & \\
       \vdots & \ddots & \vdots & \\
-      0 & \cdots & 1 & params \\
+      0 & \cdots & 1 & A \\
       0 & \cdots & 0 & \\
       \vdots & \ddots & \vdots & \\
       0 & \cdots & 0 & \\
