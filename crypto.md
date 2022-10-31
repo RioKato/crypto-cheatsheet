@@ -241,9 +241,9 @@ $$
 $$
 \left\\{
   \begin{array}{l}
-    b_0 = x \pmod {p_0} \\
+    a_0 = x \pmod {p_0} \\
     \vdots \\
-    b_n = x \pmod {p_n} \\
+    a_n = x \pmod {p_n} \\
   \end{array}
 \right.
 $$
@@ -251,7 +251,7 @@ $$
 ### answer
 
 $$
-x = crt(b_0, \cdots, b_n, p_0, \cdots, p_n)
+x = crt(a_0, \cdots, a_n, p_0, \cdots, p_n)
 $$
 
 ### problem
@@ -270,8 +270,20 @@ $$
 
 $$
 \begin{array}{l}
-  P_i = (n / p_i) P \\
-  p_i P_i = G \\
+  \left\\{
+    \begin{array}{l}
+      P_0 = (n / p_0) P \\
+      \vdots \\
+      P_n = (n / p_n) P \\
+    \end{array}
+  \right. \\
+  \left\\{
+    \begin{array}{l}
+      p_0 P_0 = G \\
+      \vdots \\
+      p_n P_n = G \\
+    \end{array}
+  \right. \\
   \left\\{
     \begin{array}{l}
       b_0 P_0 = Q \\
