@@ -240,30 +240,34 @@ $$
 ### problem
 
 $$
-\begin{array}{l}
-  \left\\{
+\left\\{
+  \begin{array}{l}
     Q = x P \\
     a P = G \\
     a = \prod p_i \\
-  \right.
-\end{array}
+  \end{array}
+\right.
 $$
 
-### solve
+### answer
 
 $$
 \begin{array}{l}
   P_i &=& (n / p_i) P \\
   p_i P_i &=& G \\
   \left\\{
-    y_0 P_0 = Q \\
-    \vdots \\
-    y_n P_n = Q \\
+    \begin{array}{l}
+      y_0 P_0 = Q \\
+      \vdots \\
+      y_n P_n = Q \\
+    \end{array}
   \right. \\
   \left\\{
-    y_0 = x \pmod p_0 \\
-    \vdots \\
-    y_n = x \pmod p_n \\
+    \begin{array}{l}
+      y_0 = x \pmod p_0 \\
+      \vdots \\
+      y_n = x \pmod p_n \\
+    \end{array}
   \right. \\
   x = crt(y_0, \cdots, y_n, p_1, \cdots, p_n)
 \end{array}
