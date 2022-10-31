@@ -210,8 +210,8 @@ $$
   \left\\{
     \begin{array}{l}
       g_1(x) = x - m_1 \\
-      g_2(x) = c_2 - f_2(x) = g_1(x) h_1(x) \\
-      g_3(x) = c_2 - f_1(f_3(x)) = g_1(x) h_2(x) \\
+      g_2(x) = c_1 - f_1(x) = g_1(x) h_1(x) \\
+      g_3(x) = c_2 - f_2(f_3(x)) = g_1(x) h_2(x) \\
     \end{array}
   \right. \\
   g_1 = gcd(g_2, g_3)
