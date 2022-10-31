@@ -189,9 +189,26 @@ $$
 x^n + a_{n-1} x^{n-1} + \cdots + a_1 x + a_0 = 0 \pmod N
 $$
 
-## GCD(Franklin-Reiter's Related Message Attack)
+## GCD
 
 ### problem
+
+$$
+\left\\{
+  \begin{array}{l}
+    N_1 = P_1 P_2 \\
+    N_2 = P_1 P_3 \\
+  \end{array}
+\right.
+$$
+
+### answer
+
+$$
+P_1 = gcd(N_1, N_2)
+$$
+
+### problem(Franklin-Reiter's Related Message Attack)
 
 $$
 \left\\{
