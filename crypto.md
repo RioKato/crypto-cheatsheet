@@ -207,7 +207,6 @@ $$
 
 $$
 \begin{array}{l}
-  c_2 &=& f_1(f_3(m_1)) \\
   \left\\{
     \begin{array}{l}
       g_1(x) = x - m_1 \\
@@ -215,6 +214,6 @@ $$
       g_3(x) = c_2 - f_1(f_3(x)) = g_1(x) h_2(x) \\
     \end{array}
   \right. \\
-  g_1 &=& gcd(g_2, g_3)
+  g_1 = gcd(g_2, g_3)
 \end{array}
 $$
