@@ -208,7 +208,7 @@ $$
 P_1 = gcd(N_1, N_2)
 $$
 
-### problem(Franklin-Reiter's Related Message Attack)
+### problem
 
 $$
 \left\\{
@@ -232,5 +232,39 @@ $$
     \end{array}
   \right. \\
   g_1 = gcd(g_2, g_3)
+\end{array}
+$$
+
+## Chinese remainder theorem
+
+### problem
+
+$$
+\begin{array}{l}
+  \left\\{
+    Q = x P \\
+    a P = G \\
+    a = \prod p_i \\
+  \right.
+\end{array}
+$$
+
+### solve
+
+$$
+\begin{array}{l}
+  P_i &=& (n / p_i) P \\
+  p_i P_i &=& G \\
+  \left\\{
+    y_0 P_0 = Q \\
+    \vdots \\
+    y_n P_n = Q \\
+  \right. \\
+  \left\\{
+    y_0 = x \pmod p_0 \\
+    \vdots \\
+    y_n = x \pmod p_n \\
+  \right. \\
+  x = crt(y_0, \cdots, y_n, p_1, \cdots, p_n)
 \end{array}
 $$
