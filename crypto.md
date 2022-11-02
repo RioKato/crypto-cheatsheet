@@ -315,15 +315,19 @@ $$
 $$
 \begin{array}{l}
   \left\\{
-		p = (a - b) \\
-		q = (a + b) \\
+    \begin{array}{l}
+      p = (a - b) \\
+      q = (a + b) \\
+    \end{array}
   \right. \\
-		N = (a - b) (a + b) = a^2 - b^2 \\
+    N = (a - b) (a + b) = a^2 - b^2 \\
   \left\\{
-		c_1 = \sqrt {(\sqrt{N} + 1)^2 - N} \\
-		c_2 = \sqrt {(\sqrt{N} + 2)^2 - N} \\
-		\vdots \\
-		c_i = \sqrt {(\sqrt{N} + i)^2 - N} \\
+    \begin{array}{l}
+      c_1 = \sqrt {(\sqrt{N} + 1)^2 - N} \\
+      c_2 = \sqrt {(\sqrt{N} + 2)^2 - N} \\
+      \vdots \\
+      c_i = \sqrt {(\sqrt{N} + i)^2 - N} \\
+    \end{array}
   \right.
 \end{array}
 $$
